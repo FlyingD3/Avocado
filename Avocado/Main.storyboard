@@ -2,14 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="Avocado" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -68,7 +67,7 @@
         <!--Game Controller-->
         <scene sceneID="Bay-HB-YfH">
             <objects>
-                <viewController id="dRc-Ln-rgw" customClass="GameController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dRc-Ln-rgw" customClass="GameController" customModule="Avocado" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="EhU-et-Xce">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -81,16 +80,6 @@
                                 </constraints>
                                 <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="NSAddTemplate" id="95s-Zc-auw"/>
                             </imageView>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3C-sh-u8c">
-                                <rect key="frame" x="176" y="283.5" width="25" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="GIt-TZ-6DP"/>
-                                    <constraint firstAttribute="width" constant="25" id="j36-H5-XPb"/>
-                                </constraints>
-                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="Nqm-Ma-CHe">
-                                    <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
-                                </imageCell>
-                            </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GMB-Y8-xTc">
                                 <rect key="frame" x="398" y="286" width="4" height="28"/>
                                 <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" id="K21-Gl-48R">
@@ -99,31 +88,44 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-gI-Nh9" userLabel="CircleRight">
-                                <rect key="frame" x="576" y="283.5" width="25" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="Dtg-J8-cxp"/>
-                                    <constraint firstAttribute="height" constant="25" id="dWG-bC-lJb"/>
-                                </constraints>
-                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="QLv-RV-zOW">
-                                    <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
-                                </imageCell>
-                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-V4-Cad" userLabel="LeftLabel">
+                                <rect key="frame" x="205" y="288" width="37" height="24"/>
+                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Label" id="Cm9-jx-gav">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="dRc-Ln-rgw" name="displayPatternValue1" keyPath="self.lecterLeft" id="U7O-CZ-7tm">
+                                        <dictionary key="options">
+                                            <string key="NSDisplayPattern">%{value1}@</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reE-zs-R7P" userLabel="RightLabel">
+                                <rect key="frame" x="568" y="288" width="48" height="24"/>
+                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Label" id="46c-dx-ZsK">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Lgj-V4-Cad" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" id="0Ty-i3-7cv"/>
                             <constraint firstItem="GMB-Y8-xTc" firstAttribute="centerX" secondItem="EhU-et-Xce" secondAttribute="centerX" id="9j8-0C-HbQ"/>
                             <constraint firstItem="GMB-Y8-xTc" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" id="Cya-bP-28N"/>
-                            <constraint firstItem="hHa-gI-Nh9" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" id="SF6-Iv-o6A"/>
                             <constraint firstItem="z8U-Vp-0Qi" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" constant="1" id="UIk-rX-TFA"/>
-                            <constraint firstItem="C3C-sh-u8c" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" id="VWS-IG-KpB"/>
+                            <constraint firstItem="reE-zs-R7P" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" id="sfN-wf-CWx"/>
                             <constraint firstItem="z8U-Vp-0Qi" firstAttribute="centerX" secondItem="EhU-et-Xce" secondAttribute="centerX" id="ssr-hR-Og7"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="circleLeft" destination="C3C-sh-u8c" id="9F2-2Y-YrI"/>
-                        <outlet property="circleRight" destination="hHa-gI-Nh9" id="z2e-Zw-p8u"/>
                         <outlet property="cross" destination="z8U-Vp-0Qi" id="gRa-4G-rsB"/>
                         <outlet property="currentView" destination="EhU-et-Xce" id="FBR-5M-STG"/>
+                        <outlet property="lecterLeft" destination="Lgj-V4-Cad" id="VLp-AH-O7N"/>
+                        <outlet property="lecterRight" destination="reE-zs-R7P" id="8Wy-V7-kjF"/>
                         <outlet property="message" destination="GMB-Y8-xTc" id="7x8-6Y-cL9"/>
                     </connections>
                 </viewController>
@@ -134,6 +136,5 @@
     </scenes>
     <resources>
         <image name="NSAddTemplate" width="14" height="13"/>
-        <image name="circle.fill" catalog="system" width="19" height="19"/>
     </resources>
 </document>
