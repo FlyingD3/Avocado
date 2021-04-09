@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65130BAB26021D5F00434FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65130BAA26021D5F00434FEC /* Main.storyboard */; };
+		6540CC402603ACAE005E30BF /* suono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6540CC3F2603ACAE005E30BF /* suono.mp3 */; };
+		654CF006261CAA6300DECA67 /* kiwi.icns in Resources */ = {isa = PBXBuildFile; fileRef = 654CF005261CAA6300DECA67 /* kiwi.icns */; };
+		654CF009261CAB2500DECA67 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 654CF008261CAB2500DECA67 /* icon.iconset */; };
+		656EE7602601076D009B9BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656EE75F2601076D009B9BB7 /* AppDelegate.swift */; };
+		656EE7622601076D009B9BB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656EE7612601076D009B9BB7 /* ViewController.swift */; };
+		656EE7642601076F009B9BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656EE7632601076F009B9BB7 /* Assets.xcassets */; };
+		656EE77126010D3C009B9BB7 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656EE77026010D3C009B9BB7 /* GameController.swift */; };
+		65EA0E42260E0C7800399534 /* google@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EA0E41260E0C7800399534 /* google@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		331D4F66A262299A1FE49707 /* Pods-Kiwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiwi.debug.xcconfig"; path = "Target Support Files/Pods-Kiwi/Pods-Kiwi.debug.xcconfig"; sourceTree = "<group>"; };
+		65130BAA26021D5F00434FEC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6540CC3F2603ACAE005E30BF /* suono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suono.mp3; sourceTree = "<group>"; };
+		654CF005261CAA6300DECA67 /* kiwi.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = kiwi.icns; sourceTree = "<group>"; };
+		654CF008261CAB2500DECA67 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = "<group>"; };
+		656EE75C2601076D009B9BB7 /* Avocado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocado.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		656EE75F2601076D009B9BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		656EE7612601076D009B9BB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		656EE7632601076F009B9BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		656EE7682601076F009B9BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656EE7692601076F009B9BB7 /* Kiwi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kiwi.entitlements; sourceTree = "<group>"; };
+		656EE77026010D3C009B9BB7 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		65EA0E41260E0C7800399534 /* google@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google@2x.png"; sourceTree = "<group>"; };
+		6F24ACE21FFA4243ECB38FE9 /* Pods-Kiwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiwi.release.xcconfig"; path = "Target Support Files/Pods-Kiwi/Pods-Kiwi.release.xcconfig"; sourceTree = "<group>"; };
+		C066B8E874FD93D1AA54DCCF /* Pods_Kiwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kiwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		656EE7592601076D009B9BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		656EE7532601076D009B9BB7 = {
+			isa = PBXGroup;
+			children = (
+				65EA0E40260E0C6E00399534 /* Images */,
+				656EE75E2601076D009B9BB7 /* Avocado */,
+				656EE75D2601076D009B9BB7 /* Products */,
+				D03E84E4383C0111FAB2E83A /* Pods */,
+				EA7E4294C1D2246C90E8D0F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		656EE75D2601076D009B9BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				656EE75C2601076D009B9BB7 /* Avocado.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		656EE75E2601076D009B9BB7 /* Avocado */ = {
+			isa = PBXGroup;
+			children = (
+				6540CC3F2603ACAE005E30BF /* suono.mp3 */,
+				656EE77026010D3C009B9BB7 /* GameController.swift */,
+				656EE75F2601076D009B9BB7 /* AppDelegate.swift */,
+				656EE7612601076D009B9BB7 /* ViewController.swift */,
+				656EE7632601076F009B9BB7 /* Assets.xcassets */,
+				65130BAA26021D5F00434FEC /* Main.storyboard */,
+				656EE7682601076F009B9BB7 /* Info.plist */,
+				656EE7692601076F009B9BB7 /* Kiwi.entitlements */,
+			);
+			path = Avocado;
+			sourceTree = "<group>";
+		};
+		65EA0E40260E0C6E00399534 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				654CF005261CAA6300DECA67 /* kiwi.icns */,
+				65EA0E41260E0C7800399534 /* google@2x.png */,
+				654CF008261CAB2500DECA67 /* icon.iconset */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D03E84E4383C0111FAB2E83A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				331D4F66A262299A1FE49707 /* Pods-Kiwi.debug.xcconfig */,
+				6F24ACE21FFA4243ECB38FE9 /* Pods-Kiwi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA7E4294C1D2246C90E8D0F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C066B8E874FD93D1AA54DCCF /* Pods_Kiwi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		656EE75B2601076D009B9BB7 /* Avocado */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656EE76C2601076F009B9BB7 /* Build configuration list for PBXNativeTarget "Avocado" */;
+			buildPhases = (
+				4B00ED2B669233F66BC9C76A /* [CP] Check Pods Manifest.lock */,
+				656EE7582601076D009B9BB7 /* Sources */,
+				656EE7592601076D009B9BB7 /* Frameworks */,
+				656EE75A2601076D009B9BB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Avocado;
+			productName = Kiwi;
+			productReference = 656EE75C2601076D009B9BB7 /* Avocado.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		656EE7542601076D009B9BB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					656EE75B2601076D009B9BB7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 656EE7572601076D009B9BB7 /* Build configuration list for PBXProject "Avocado" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 656EE7532601076D009B9BB7;
+			productRefGroup = 656EE75D2601076D009B9BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				656EE75B2601076D009B9BB7 /* Avocado */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		656EE75A2601076D009B9BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656EE7642601076F009B9BB7 /* Assets.xcassets in Resources */,
+				6540CC402603ACAE005E30BF /* suono.mp3 in Resources */,
+				654CF009261CAB2500DECA67 /* icon.iconset in Resources */,
+				65130BAB26021D5F00434FEC /* Main.storyboard in Resources */,
+				65EA0E42260E0C7800399534 /* google@2x.png in Resources */,
+				654CF006261CAA6300DECA67 /* kiwi.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B00ED2B669233F66BC9C76A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kiwi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		656EE7582601076D009B9BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656EE7622601076D009B9BB7 /* ViewController.swift in Sources */,
+				656EE77126010D3C009B9BB7 /* GameController.swift in Sources */,
+				656EE7602601076D009B9BB7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		656EE76A2601076F009B9BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		656EE76B2601076F009B9BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		656EE76D2601076F009B9BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 331D4F66A262299A1FE49707 /* Pods-Kiwi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Avocado/Avocado.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6Z9M43BMB6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Avocado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.cnr.irib.Avocado;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		656EE76E2601076F009B9BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F24ACE21FFA4243ECB38FE9 /* Pods-Kiwi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Avocado/Avocado.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6Z9M43BMB6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Avocado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.cnr.irib.Avocado;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		656EE7572601076D009B9BB7 /* Build configuration list for PBXProject "Avocado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656EE76A2601076F009B9BB7 /* Debug */,
+				656EE76B2601076F009B9BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656EE76C2601076F009B9BB7 /* Build configuration list for PBXNativeTarget "Avocado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656EE76D2601076F009B9BB7 /* Debug */,
+				656EE76E2601076F009B9BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 656EE7542601076D009B9BB7 /* Project object */;
+}

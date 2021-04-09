@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JWh-SP-pYy">
+                                <rect key="frame" x="333" y="283" width="134" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Fty-HH-wEc"/>
+                                    <constraint firstAttribute="height" constant="20" id="l5J-mF-Ja4"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="START SESSION" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="25Y-fe-qz3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="dRc-Ln-rgw" kind="show" id="gus-WZ-Sg6"/>
+                                </connections>
+                            </button>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HFc-CW-OVy">
+                                <rect key="frame" x="422" y="342" width="54" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="4°" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="P8d-XL-AN6" id="9a4-St-OEk">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="XiY-Th-eb4">
+                                        <items>
+                                            <menuItem title="4°" state="on" id="P8d-XL-AN6"/>
+                                            <menuItem title="8°" id="Lym-w2-cTS"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xq0-it-Dek">
+                                <rect key="frame" x="327" y="348" width="83" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Scegli i gradi" id="7ZK-dB-X4j">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JWh-SP-pYy" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="LyI-Gc-RAJ"/>
+                            <constraint firstItem="JWh-SP-pYy" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="wjq-5p-JId"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="degree" destination="HFc-CW-OVy" id="e59-gC-9mY"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="901"/>
+        </scene>
+        <!--Game Controller-->
+        <scene sceneID="Bay-HB-YfH">
+            <objects>
+                <viewController id="dRc-Ln-rgw" customClass="GameController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="EhU-et-Xce">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-Vp-0Qi">
+                                <rect key="frame" x="376" y="275.5" width="48.5" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UKP-He-3SH"/>
+                                    <constraint firstAttribute="width" constant="47.5" id="j3N-gE-Wku"/>
+                                </constraints>
+                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="NSAddTemplate" id="95s-Zc-auw"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3C-sh-u8c">
+                                <rect key="frame" x="176" y="283.5" width="25" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="GIt-TZ-6DP"/>
+                                    <constraint firstAttribute="width" constant="25" id="j36-H5-XPb"/>
+                                </constraints>
+                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="Nqm-Ma-CHe">
+                                    <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                </imageCell>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GMB-Y8-xTc">
+                                <rect key="frame" x="398" y="286" width="4" height="28"/>
+                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" id="K21-Gl-48R">
+                                    <font key="font" metaFont="system" size="24"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-gI-Nh9" userLabel="CircleRight">
+                                <rect key="frame" x="576" y="283.5" width="25" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="Dtg-J8-cxp"/>
+                                    <constraint firstAttribute="height" constant="25" id="dWG-bC-lJb"/>
+                                </constraints>
+                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="QLv-RV-zOW">
+                                    <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                </imageCell>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GMB-Y8-xTc" firstAttribute="centerX" secondItem="EhU-et-Xce" secondAttribute="centerX" id="9j8-0C-HbQ"/>
+                            <constraint firstItem="GMB-Y8-xTc" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" id="Cya-bP-28N"/>
+                            <constraint firstItem="hHa-gI-Nh9" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" id="SF6-Iv-o6A"/>
+                            <constraint firstItem="z8U-Vp-0Qi" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" constant="1" id="UIk-rX-TFA"/>
+                            <constraint firstItem="C3C-sh-u8c" firstAttribute="centerY" secondItem="EhU-et-Xce" secondAttribute="centerY" id="VWS-IG-KpB"/>
+                            <constraint firstItem="z8U-Vp-0Qi" firstAttribute="centerX" secondItem="EhU-et-Xce" secondAttribute="centerX" id="ssr-hR-Og7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleLeft" destination="C3C-sh-u8c" id="9F2-2Y-YrI"/>
+                        <outlet property="circleRight" destination="hHa-gI-Nh9" id="z2e-Zw-p8u"/>
+                        <outlet property="cross" destination="z8U-Vp-0Qi" id="gRa-4G-rsB"/>
+                        <outlet property="currentView" destination="EhU-et-Xce" id="FBR-5M-STG"/>
+                        <outlet property="message" destination="GMB-Y8-xTc" id="7x8-6Y-cL9"/>
+                    </connections>
+                </viewController>
+                <customObject id="fDq-m8-RGz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="1766"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="14" height="13"/>
+        <image name="circle.fill" catalog="system" width="19" height="19"/>
+    </resources>
+</document>
