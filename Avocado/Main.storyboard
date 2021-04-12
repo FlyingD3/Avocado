@@ -89,9 +89,9 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-V4-Cad" userLabel="LeftLabel">
-                                <rect key="frame" x="205" y="288" width="37" height="24"/>
+                                <rect key="frame" x="205" y="284" width="37" height="33"/>
                                 <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Label" id="Cm9-jx-gav">
-                                    <font key="font" metaFont="system" size="20"/>
+                                    <font key="font" metaFont="system" size="28"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -104,9 +104,9 @@
                                 </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reE-zs-R7P" userLabel="RightLabel">
-                                <rect key="frame" x="568" y="288" width="48" height="24"/>
+                                <rect key="frame" x="568" y="284" width="48" height="33"/>
                                 <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Label" id="46c-dx-ZsK">
-                                    <font key="font" metaFont="system" size="20"/>
+                                    <font key="font" metaFont="system" size="28"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
